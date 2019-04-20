@@ -1,0 +1,37 @@
+.labels {
+	margin-bottom: 100px;
+}
+
+.labels__list {
+    width: 1280px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.labels__item {
+	list-style: none;
+	color: @c-labels;
+	line-height: 24px;
+	font-size: 16px;
+	background-color: @bg-labels;
+	padding: 6px 16px;
+	border-radius: 5px;
+	align-self: center; 
+	margin-top: 8px;
+	margin-right: 8px;
+}
+
+.labels__item:hover {
+	background-color: @c-white;
+	cursor: pointer;
+}
+
+.hidden {
+	// display: none;
+}

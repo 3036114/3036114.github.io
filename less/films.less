@@ -1,0 +1,109 @@
+.films{
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.films__header {
+	line-height: 48px;
+	font-size: 36px;
+	color: @c-white;
+	margin-bottom: 36px;
+	font-weight: 900;
+}
+
+.films__wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.film__link {
+	text-decoration: none;
+}
+
+.film__item {
+	width: 302px;
+	height: 454px;
+	display: flex;
+	border-radius: 16px;
+	margin-bottom: 17px;
+	margin-right: 17px;
+}
+
+ .film__img {
+	position: absolute;
+	width: 302px;
+	height: 454px;
+	border-radius: 16px;
+	vertical-align: top; //убираю загадочные отступы у картинки см.лекцию
+	background-color: @bg-grey2;
+	background-image: url("../img/film-wait.jpg");
+ }
+
+ .film__mask {
+	display: none;
+	position: relative;
+	z-index: 12;
+	width: 302px;
+	height: 454px;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 26.43%, rgba(0, 0, 0, 0.8) 72.41%);
+	backdrop-filter: blur(2px);
+	color: @c-white;
+	border-radius: 16px;
+	cursor: pointer;
+}
+
+.film__item:hover .film__mask {
+	display: block;
+}
+
+.film__raiting {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-self: baseline;
+	padding-right: 20px;
+	padding-left: 20px;
+	position: relative;
+	left: 0%;
+	top: 65%;
+}
+
+.rating__like-icon {
+	background-image: url("../img/r05.png");
+	background-repeat: no-repeat;
+	background-size: 24px;
+	background-position: 0% 50%;
+	width: 30px;
+	height: 30px;
+}
+
+.rating__like-mark {
+	line-height: 36px;
+	font-size: 24px;
+}
+
+.film__title {
+	position: relative;
+	left: 0%;
+	top: 60%;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-weight: bold;
+	line-height: 36px;
+	font-size: 24px;
+}
+
+.film__details {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-right: 20px;
+	padding-left: 20px;
+	position: relative;
+	left: 0%;
+	top: 65%;
+	color: @bg-grey;
+}
